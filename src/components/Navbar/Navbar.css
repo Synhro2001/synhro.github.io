@@ -1,0 +1,48 @@
+.navbar {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 99;
+  background: transparent;
+
+  backdrop-filter: blur(50px); /* Эффект размытия фона */
+  -webkit-backdrop-filter: blur(10px); /* Для поддержки в Safari */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Пример тени: смещение по x, смещение по y, размытие, цвет */
+}
+
+  
+.navbar-content {
+  display: flex;
+  justify-content: center; /* Центрирование элементов по горизонтали */
+  align-items: center; /* Центрирование элементов по вертикали */
+  height: 100%; /* Чтобы элементы занимали всю высоту Navbar */
+}
+
+
+.navbar a {
+  position: relative;
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  padding: 7px 16px;
+
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Толщина линии */
+    bottom: 0;
+    left: 0;
+    background-color: white; /* Цвет линии */
+    transition: width 0.3s ease-in-out; /* Плавная анимация */
+}
+
+.navbar a:hover::after {
+    width: 100%; /* Ширина линии становится 100% при наведении */
+}

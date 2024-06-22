@@ -1,0 +1,28 @@
+.card {
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card.medium {
+    width: 300px; /* Пример ширины для средней карточки */
+  }
+  
+  .card.large {
+    width: 400px; /* Пример ширины для большой карточки */
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  

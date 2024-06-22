@@ -1,0 +1,42 @@
+.app-container {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,25,25,1) 100%); 
+  min-height: 100vh; /* Используем min-height вместо height */
+}
+
+/* .navbar-container {
+  width: 100%;
+  height: 100px;
+} */
+/*  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(60,60,60,0.9528945367209384) 100%);  */
+
+/*  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,25,25,1) 100%);  */
+
+/*   background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 1%,
+    rgba(10, 52, 80, 1) 100%
+  ); */
+
+.app-content {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%, /* Начало плавного перехода */
+      rgba(0, 0, 0, 0.7) 10%, /* Переход от черного цвета */
+      rgba(0, 0, 0, 0.3) 30%, /* Плавный переход к прозрачности */
+      rgba(0, 0, 0, 0.3) 70%, /* Переходная зона прозрачности */
+      rgba(0, 0, 0, 0.7) 90%, /* Переход к черному цвету снизу */
+      rgba(0, 0, 0, 1) 100% /* Конец плавного перехода */
+    ),
+    url('../public/assets/background.jpg'); /* Замените на URL вашего изображения */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  padding: 50px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+body {
+
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  color: #999999;
+}

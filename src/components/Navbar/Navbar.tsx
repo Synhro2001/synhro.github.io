@@ -1,25 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
+  const handleScroll = (elementId: string) => {
+    const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <Link to="/" onClick={() => handleScroll('home')}>Home</Link>
-        <Link to="/about-us" onClick={() => handleScroll('aboutus')}>About Us</Link>
-        <Link to="/contact" onClick={() => handleScroll('contact')}>Contact</Link>
+        <a onClick={() => handleScroll('home')}>Home</a>
+        <a onClick={() => handleScroll('about-me')}>About Us</a>
+        <a onClick={() => handleScroll('skills')}>Skills</a>
+        <a onClick={() => handleScroll('contact-me')}>Contact</a>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-

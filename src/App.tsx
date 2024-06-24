@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import AboutUs from './pages/AboutUs';
+import AboutMePage from './pages/AboutMe';
 import HomePage from './pages/Home';
+import SkillsPage from './pages/Skills';
+import ContactMePage from './pages/ContactMe';
 
 const App: React.FC = () => {
   return (
@@ -14,16 +16,22 @@ const App: React.FC = () => {
           <Navbar/>
         </div>
         <div className="app-content">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
-        </Routes>
+          <section id="home">
+            <HomePage/>
+          </section>
+          <section id="about-me">
+            <AboutMePage />
+          </section>
+          <section id="skills">
+            <SkillsPage/>
+          </section>
+          <section id="contact-me" className="contact-me-background">
+          <ContactMePage/>
+          </section>
         </div>
+       
       </Router>
-
     </div>
-   
   );
 };
 

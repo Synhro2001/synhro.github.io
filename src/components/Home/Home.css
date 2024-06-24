@@ -3,9 +3,7 @@
     flex-direction: column; /* Располагаем элементы в колонку */
     justify-content: center; /* Центрируем по вертикали */
     align-items: center; /* Центрируем по горизонтали */
-    /* height: calc(100vh - 200px); Высота контейнера минус отступы сверху и снизу */
-    box-sizing: border-box;
-    padding: 90px;
+    height: calc(100vh - 200px);
 
 }
 
@@ -18,22 +16,18 @@
     text-align: left; /* Центрируем текст по центру */
 }
 
-.home-content-right {
-  
-    margin-top: 20px; /* Отступ сверху */
-    
-}
-
 .home-title {
     font-size: 64px;
     margin: 0;
     font-weight: 600;
+    
 }
 
-.typewriter-wrapper {
+.home-typewriter-wrapper {
     display: inline-block;
-    min-height: 1.2em; /* Установите минимальную высоту для фиксации размера контейнера */
-    font-size: 64px;
+    height: 40px; /* Установите минимальную высоту для фиксации размера контейнера */
+    font-size: 32px;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: blink-caret 0.75s step-end infinite;
@@ -43,8 +37,6 @@
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
-
-   
 }
 
 @keyframes blink-caret {
@@ -56,19 +48,3 @@
     }
 }
 
-.home-textarea {
-    width: 80%;
-    height: 200px; /* Высота textarea, которая вам нужна */
-    padding: 30px; /* Внутренние отступы */
-    border: none; /* Убираем границу */
-    background-color: rgba(0, 0, 0, 0.2); /* Прозрачный фон */
-    backdrop-filter: blur(10px); /* Эффект размытия фона */
-    -webkit-backdrop-filter: blur(10px); /* Для поддержки в Safari */
-    border-radius: 10px; /* Задаем радиус скругления углов */
-    resize: none; /* Отключаем изменение размеров textarea */
-    outline: none; /* Убираем контур фокуса */
-    font-size: 16px; /* Размер шрифта */
-    color: white; /* Цвет текста */
-    font-family: Arial, sans-serif; /* Шрифт */
-    box-sizing: border-box; /* Учитываем padding и border в общей ширине элемента */
-}

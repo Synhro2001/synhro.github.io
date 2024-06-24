@@ -13,3 +13,25 @@ code {
 p {
   color: #999999;
 }
+
+span, h1, h2, h3, a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* #home, #about-me, #contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */

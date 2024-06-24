@@ -29,6 +29,7 @@
   color: white; /* Цвет текста */
   text-decoration: none; /* Убираем стандартное подчеркивание */
   padding: 7px 16px;
+  cursor: pointer;
 
 }
 
@@ -46,3 +47,4 @@
 .navbar a:hover::after {
     width: 100%; /* Ширина линии становится 100% при наведении */
 }
+

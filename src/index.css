@@ -1,8 +1,6 @@
 body {
-
   margin: 0;
   box-sizing: border-box;
-  color: white;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -12,9 +10,21 @@ code {
 
 p {
   color: #999999;
+  font-size: 16px;
+
 }
 
-span, h1, h2, h3, a {
+h1, h2, h3 {
+  color: #999999;
+  font-size: 64px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+span {
+  font-size: 32px;
+}
+span, a {
   color: #fff;
   text-decoration: none;
 }
@@ -28,10 +38,48 @@ ul {
   padding: 0;
 }
 
+.animation-line a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-/* #home, #about-me, #contact {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.animation-line a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.animation-line a:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  h1, h2, h3 {
+    font-size: 48px;
+  }
+}

@@ -49,11 +49,11 @@ const Fullstack: React.FC = () => {
   };
 
   return (
-    <div>
-      <ul className="dashed-list">
+    <>
+      <ul className="animation-line">
         {renderContent()}
       </ul>
-    </div>
+    </>
   );
 };
 

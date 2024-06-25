@@ -19,12 +19,12 @@ function Skills() {
   return (
     <div className="skills-container">
       <div className="skills-wrapper">
-        <p className="skills-title">It's my Skills</p>
-        <span className="skills-description">You can see my skills in: {text}</span>
+        <h1>It's my Skills</h1>
+        <span>You can see my skills in: {text}</span>
         <div className="skills-card-container">
           <Card
             title='Fullstack developer'
-            description='React, C#, Next.js, SQL'
+            description='React, Typescript, Javascript, C#, Next.js, SQL, MongoDB'
             size='medium'
             background={cardBackground}
             content={<Fullstack/>}
@@ -40,7 +40,7 @@ function Skills() {
           />
             <Card
             title='Video creator'
-            description='ClimpChamp'
+            description='ClipChamp, Blender'
             size='medium'
             background={cardBackground}
             content={<VideoCreator/>}

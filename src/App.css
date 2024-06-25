@@ -20,7 +20,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  color: white;
 }
 
 .contact-me-background {
@@ -38,4 +37,14 @@
   );
 
   height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  .app-content {
+    padding: 50px; 
+  }
+
+  .contact-me-background {
+    height: 50vh; 
+  }
 }

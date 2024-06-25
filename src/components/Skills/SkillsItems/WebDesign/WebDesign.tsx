@@ -19,7 +19,7 @@ const WebDesign = () => {
 
   return (
     <div>
-      <ul className="dashed-list">
+      <ul className="animation-line">
         {!showFigmaTemplates && (
           <Button label="Figma Templates" onClick={toggleFigmaTemplates} className="list-button" />
         )}

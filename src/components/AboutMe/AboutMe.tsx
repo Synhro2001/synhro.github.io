@@ -4,7 +4,13 @@ import myPhoto from '../../assets/myPhoto.jpg'
 
 const AboutMe = () => {
 
-  const description = 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
+  const description = `
+  I graduated with a Bachelor's Degree in Engineering Sciences in Information Technology and Computer Science from Riga Technical University. 
+  Besides formal education, I continuously improve through professional courses. 
+  As a communicative individual passionate about solving complex problems, 
+  I excel in both frontend and backend development, thriving in dynamic environments driven by creativity and innovation.
+`;
+
 
   return (
     <div className="about-me-container">
@@ -13,14 +19,14 @@ const AboutMe = () => {
             <img src={myPhoto} alt="About Me Image"/>
           </div>
           <div className="about-me-text-content"> 
-            <p className="about-me-title">About me</p>
+            <h1>About me</h1>
             <p className="about-me-description">{description}</p>
-            <p className="about-me-contact">Contact me</p>
+            <p className="about-me-why-me">Why me ?</p>
             <div className="about-me-line"></div>
-            <div className="about-me-contact-container">
-              <p className="telephone">Telephone: (123) 456-7890</p>
-              <p className="web-info">Email: example@example.com</p>
-              <p className="web-info">Website: www.example.com</p>
+            <div className="about-me-why-me-container">
+              <p>My academic knowledge and practical experience enable me to tackle challenges holistically, delivering efficient and innovative solutions.</p>
+              <p>I am dedicated to delivering high-quality results, ensuring every project meets its objectives on time and within budget.</p>
+              <p>I am passionate about continuous learning and achieving goals, always eager to embark on new achievements and expand my expertise.</p>
             </div>
           </div>
         </div>

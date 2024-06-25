@@ -5,7 +5,7 @@ const ContactMe = () => {
   return (
     <div className="contact-me-container">
         <div className="contact-me-text-content">
-          <p className="contact-me-title">Contact me</p>
+          <h1>Contact me</h1>
           <div className="contact-me-line"></div>
           <div className="contact-me-info">
             <p className="contact-me-detail">Phone: (+371) 20246328 (Mobile)</p>

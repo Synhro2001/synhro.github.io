@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-content">
+      <div className="navbar-content animation-line">
         <a onClick={() => handleScroll('home')}>Home</a>
         <a onClick={() => handleScroll('about-me')}>About Us</a>
         <a onClick={() => handleScroll('skills')}>Skills</a>

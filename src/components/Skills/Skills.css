@@ -11,19 +11,9 @@
   width: 100%;
 }
 
-.skills-title {
-  font-size: 64px;
-  margin: 0;
-  font-weight: 600;
-}
-
-.skills-description {
-  font-size: 32px;
-}
-
 .skills-card-container {
   display: flex;
-  justify-content: space-between; /* Равномерное распределение карточек по ширине */
+  justify-content: space-between;
   margin-top: 30px;
 }
 
@@ -73,26 +63,4 @@
 
 .list-button:focus {
   outline: none;
-}
-
-.dashed-list a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.dashed-list a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transition: width 0.3s ease-in-out;
-}
-
-.dashed-list a:hover::after {
-  width: 100%;
 }

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 95vh; */
   background-color: black;
   padding: 50px;
   box-sizing: border-box;
@@ -12,7 +11,7 @@
 
 .about-me-wrapper {
   display: flex;
-  max-width: 1200px;
+  min-width: 40%;
   width: 100%;
   border-radius: 25px;
   overflow: hidden;
@@ -38,29 +37,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный черный слой */
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .about-me-text-content {
   flex: 2;
-  padding: 50px;
-  color: white;
-}
-
-.about-me-title {
-  font-size: 64px;
-  margin: 0;
-  font-weight: 600;
+  padding: 0 50px;
 }
 
 .about-me-description {
-  font-size: 18px;
   line-height: 1.5;
   margin-top: 20px;
 }
 
-.about-me-contact {
-  font-size: 24px;
+.about-me-why-me {
+  font-size: 32px;
   font-weight: bold;
   margin-top: 30px;
 }
@@ -72,12 +63,52 @@
   margin: 20px 0;
 }
 
-.about-me-contact-container {
+.about-me-why-me-container {
   display: flex;
   flex-direction: column;
 }
 
-.telephone, .web-info {
+.about-me-why-me-container p {
   font-size: 16px;
   margin: 5px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-me-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-me-img-content {
+    flex: 0;
+  }
+
+  .about-me-text-content {
+    flex: 1;
+    padding: 0;
+  }
+
+  .about-me-description {
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .about-me-why-me-container {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .about-me-img-content {
+    height: auto;
+    flex: 1;
+  }
+
+  .about-me-text-content {
+    padding: 20px 0;
+  }
 }

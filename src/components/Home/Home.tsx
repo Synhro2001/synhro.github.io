@@ -4,19 +4,19 @@ import './Home.css'
 import useTypewriter from '../../hooks/useTypewriter';
 
 const Home = () => {
-  const style = {
-    background: 'rgb(2, 0, 36, 0.3)',
-  };
 
-  const messages = ["My name is Vadim.", "I'm a frontend developer."];
-  const description = 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
+  const messages = ["My name is Vadim.", "I'm a fullstack developer."];
+  const description = `I'm , a junior Fullstack Developer with extensive experience in frontend development.
+   Each project is an opportunity to help you bring your ideas to life.
+  I focus on code quality, user experience, and flexibility to ensure that your products are not only functional but also user-friendly.
+  This portfolio will introduce you to my work and provide the necessary information for us to collaborate effectively`
   const text = useTypewriter(messages, 150);
 
   return (
     <div className="home-container">
         <div className="home-wrapper">
           <div className="home-content-left">
-              <p className="home-title">Welcome !</p>
+              <h1>Welcome!</h1>
               <div className="home-typewriter-wrapper">
                 <span>{text}</span>
               </div>

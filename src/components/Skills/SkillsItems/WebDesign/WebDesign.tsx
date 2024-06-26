@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Button from '../../../Button/Button';
-import './WebDesign.css';
 
 const WebDesign = () => {
   const [showFigmaTemplates, setShowFigmaTemplates] = useState(false);

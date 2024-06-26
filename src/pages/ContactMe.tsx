@@ -3,7 +3,9 @@ import ContactMe from '../components/ContactMe/ContactMe'
 
 const ContactMePage = () => {
   return (
-    <ContactMe/>
+    <div>
+      <ContactMe/>
+    </div>
   )
 }
 

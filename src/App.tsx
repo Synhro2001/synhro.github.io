@@ -20,7 +20,7 @@ const App: React.FC = () => {
             <HomePage/>
           </section>
           <section id="about-me">
-            <AboutMePage />
+            <AboutMePage/>
           </section>
           <section id="skills">
             <SkillsPage/>

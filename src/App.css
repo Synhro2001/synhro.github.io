@@ -7,14 +7,14 @@
 .app-content {
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 1) 0%, /* Начало плавного перехода */
-      rgba(0, 0, 0, 0.7) 10%, /* Переход от черного цвета */
-      rgba(0, 0, 0, 0.3) 30%, /* Плавный переход к прозрачности */
-      rgba(0, 0, 0, 0.3) 70%, /* Переходная зона прозрачности */
-      rgba(0, 0, 0, 0.7) 90%, /* Переход к черному цвету снизу */
-      rgba(0, 0, 0, 1) 100% /* Конец плавного перехода */
+      rgba(0, 0, 0, 1) 0%, 
+      rgba(0, 0, 0, 0.7) 10%, 
+      rgba(0, 0, 0, 0.3) 30%, 
+      rgba(0, 0, 0, 0.3) 70%, 
+      rgba(0, 0, 0, 0.7) 90%, 
+      rgba(0, 0, 0, 1) 100%
     ),
-    url('./assets/background.jpg'); 
+    url('../public/assets/background.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Выравнивание содержимого по нижнему краю */
+  align-items: flex-end;
   
   background: linear-gradient(
     to bottom,

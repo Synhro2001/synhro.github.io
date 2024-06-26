@@ -1,4 +1,3 @@
-// components/Button/Button.tsx
 import React from 'react';
 import { IButton } from '../../types/IButton';
 import './Button.css';

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Button from '../../../Button/Button';
-import './Fullstack.css';
 import { renderUdemyCourses, renderLinkedInCourses, renderCompletedTestTasks } from './renderCourses';
 
 type Section = 'udemy' | 'linkedin' | 'testTasks' | null;

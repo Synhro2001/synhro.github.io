@@ -3,7 +3,10 @@ import AboutMe from '../components/AboutMe/AboutMe'
 
 const AboutMePage = () => {
   return (
-    <AboutMe/>
+    <div>
+      <AboutMe/>
+
+    </div>
   )
 }
 

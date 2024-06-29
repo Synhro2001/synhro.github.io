@@ -1,18 +1,45 @@
 import React, { useState } from 'react';
 import Button from '../../../Button/Button';
 
-const WebDesign = () => {
-  const [showFigmaTemplates, setShowFigmaTemplates] = useState(false);
+const WebDesign: React.FC = () => {
+  const [showFigmaTemplates, setShowFigmaTemplates] = useState<boolean>(false);
 
   const toggleFigmaTemplates = () => {
     setShowFigmaTemplates(!showFigmaTemplates);
   };
 
+  const onDownloadButtonClick = (pdfUrl: string, fileName: string) => {
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const renderFigmaTemplates = () => (
     <>
-      <li><a href="../../../../assets/pdf/E-commerce.pdf" download className="list-link">E-commerce website</a></li>
-      <li><a href="../../../../assets/pdf/Minimalism.pdf" download className="list-link">Minimalism template</a></li>
-      <li><a href="../../../../assets/pdf/MinimalismPhone.pdf" download className="list-link">Minimalism phone template</a></li>
+      <li>
+        <Button
+          label="E-commerce website"
+          onClick={() => onDownloadButtonClick('https://raw.githubusercontent.com/username/repository/branch/path/to/E-commerce.pdf', 'E-commerce.pdf')}
+          className="list-link"
+        />
+      </li>
+      <li>
+        <Button
+          label="Minimalism template"
+          onClick={() => onDownloadButtonClick('https://raw.githubusercontent.com/username/repository/branch/path/to/Minimalism.pdf', 'Minimalism.pdf')}
+          className="list-link"
+        />
+      </li>
+      <li>
+        <Button
+          label="Minimalism phone template"
+          onClick={() => onDownloadButtonClick('https://raw.githubusercontent.com/username/repository/branch/path/to/MinimalismPhone.pdf', 'MinimalismPhone.pdf')}
+          className="list-link"
+        />
+      </li>
     </>
   );
 

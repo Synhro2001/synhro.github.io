@@ -36,7 +36,6 @@
     rgba(0, 0, 0, 1) 65% 
   );
 
-  height: 70vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -44,7 +43,7 @@
     padding: 50px; 
   }
 
-  .contact-me-background {
+  /* .contact-me-background {
     height: 50vh; 
-  }
+  } */
 }

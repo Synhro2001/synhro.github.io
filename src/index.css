@@ -4,12 +4,8 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-code {
-  font-family: 'Courier New', Courier, monospace;
-}
-
 p {
-  color: #999999;
+  color: #c4c4c4;
   font-size: 16px;
 
 }
@@ -40,7 +36,6 @@ ul {
 
 .animation-line a {
   position: relative;
-  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -80,6 +75,6 @@ ul {
   }
 
   h1, h2, h3 {
-    font-size: 48px;
+    font-size: 36px;
   }
 }

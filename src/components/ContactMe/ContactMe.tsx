@@ -14,9 +14,6 @@ const ContactMe = () => {
             <p className="contact-me-detail">LinkedIn: <a href="https://www.linkedin.com/in/vadim-krasovskis-59091724b" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/vadim-krasovskis-59091724b</a></p>
           </div>
         </div>
-        <div className="contact-me-textarea-container">
-          <textarea className="contact-me-textarea" placeholder="Write your message..."></textarea>
-        </div>
     </div>
   );
 }

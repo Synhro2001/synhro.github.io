@@ -9,8 +9,8 @@
       to bottom,
       rgba(0, 0, 0, 1) 0%, 
       rgba(0, 0, 0, 0.7) 10%, 
-      rgba(0, 0, 0, 0.3) 30%, 
-      rgba(0, 0, 0, 0.3) 70%, 
+      rgba(0, 0, 0, 0.5) 30%, 
+      rgba(0, 0, 0, 0.5) 70%, 
       rgba(0, 0, 0, 0.7) 90%, 
       rgba(0, 0, 0, 1) 100%
     ),
@@ -23,10 +23,6 @@
 }
 
 .contact-me-background {
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   
   background: linear-gradient(
     to bottom,
